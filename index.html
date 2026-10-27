@@ -13,12 +13,14 @@
         <div id="nav">
             <a href="#inicio">Biografía</a>
             <a href="#era1">1. Pink Polo Era</a>
-            <a href="#era2">2. Alta Costura e Industrial</a>
+            <a href="#era2">2. Alta Costura</a>
             <a href="#era3">3. Era Minimalista</a>
+            <a href="#tabla-info">Resumen</a>
+            <a href="#contacto">Comunidad</a>
         </div>
     </div>
 
-    <!-- CONTENIDO GENERAL DE LA WEB (DIVs contenedores) -->
+    <!-- CONTENEDOR PRINCIPAL -->
     <div id="content">
 
         <!-- SECCIÓN DE INICIO / BIOGRAFÍA -->
@@ -81,6 +83,74 @@
                 <img src="img/era3.jpg" alt="Estilo Donda y Minimalista">
                 <img src="img/portada-era3.jpg" alt="Donda Portada">
             </div>
+            <p><a href="#inicio" class="enlace-volver">&uarr; Volver arriba</a></p>
+        </div>
+
+        <!-- NUEVA UTILIDAD: TABLA INFORMATIVA DE ERAS (Basado en el manual - Páginas 22-24) -->
+        <div id="tabla-info" class="seccion-bloque">
+            <h2>Resumen General de Eras y Estética</h2>
+            <p>Una comparativa rápida de los periodos artísticos analizados en este sitio:</p>
+            <table class="tabla-datos" border="1" cellspacing="0" cellpadding="8">
+                <tr>
+                    <th>Era Principal</th>
+                    <th>Años</th>
+                    <th>Estética Visual / Moda</th>
+                </tr>
+                <tr>
+                    <td>Pink Polo & Soul</td>
+                    <td>2004 - 2008</td>
+                    <td>Suéteres Polo, mochilas LV, tonos cálidos y universitarios[cite: 23, 24].</td>
+                </tr>
+                <tr>
+                    <td>Alta Costura & Industrial</td>
+                    <td>2010 - 2018</td>
+                    <td>Zapatillas Yeezy, tonos oscuros, chaquetas de cuero y brutalismo[cite: 23, 24].</td>
+                </tr>
+                <tr>
+                    <td>Minimalismo & Góspel</td>
+                    <td>2019 - Presente</td>
+                    <td>Ropa oversize monocromática, capuchas, máscaras y total minimalismo[cite: 23, 24].</td>
+                </tr>
+            </table>
+            <p><a href="#inicio" class="enlace-volver">&uarr; Volver arriba</a></p>
+        </div>
+
+        <!-- NUEVA UTILIDAD: FORMULARIO DE REGISTRO DE FANS (Basado en el manual - Páginas 31-35) -->
+        <div id="contacto" class="seccion-bloque">
+            <h2>Registro de Comunidad / Fan Club</h2>
+            <p>Regístrate para recibir actualizaciones sobre nuevos proyectos y lanzamientos de Ye.</p>
+            
+            <form action="#" method="POST">
+                <p>
+                    <label for="usuario">Nombre de Usuario: </label><br>
+                    <input name="usuario" type="text" maxlength="32">
+                </p>
+                <p>
+                    <label for="correo">Correo Electrónico: </label><br>
+                    <input name="correo" type="text" maxlength="64">
+                </p>
+                <p>
+                    <label for="era_favorita">Era Favorita de Kanye: </label><br>
+                    <select name="era_favorita">
+                        <option value="pink">Pink Polo Era</option>
+                        <option value="yeezus">Yeezus & Alta Costura</option>
+                        <option value="minimal">Era Minimalista</option>
+                    </select>
+                </p>
+                <p>
+                    <label>¿Qué contenido prefieres?:</label><br>
+                    <input type="radio" name="preferencia" value="musica" checked> Música y Discos<br>
+                    <input type="radio" name="preferencia" value="moda"> Moda y Yeezy
+                </p>
+                <p>
+                    <input type="checkbox" name="terminos" value="ok">
+                    <label for="terminos">Acepto recibir noticias y actualizaciones</label>
+                </p>
+                <p>
+                    <input type="submit" value="Enviar Registro">
+                    <input type="reset" value="Borrar Datos">
+                </p>
+            </form>
             <p><a href="#inicio" class="enlace-volver">&uarr; Volver arriba</a></p>
         </div>
 
