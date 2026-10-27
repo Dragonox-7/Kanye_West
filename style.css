@@ -1,153 +1,114 @@
-/* CONFIGURACIÓN GENERAL Y RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth; /* Esto hace que el desplazamiento con hipervínculos sea suave */
-    font-family: Arial, sans-serif;
-}
-
+/* CONFIGURACIÓN BÁSICA DE ETIQUETAS */
 body {
     background-color: #121212;
     color: #f4f4f4;
-    line-height: 1.6;
+    font-family: Arial, helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
-/* NAVEGACIÓN FIJA */
-header {
+/* CABECERA FIJA SUPERIOR */
+#header {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     width: 100%;
     background-color: #0a0a0a;
     border-bottom: 1px solid #333;
-    z-index: 1000;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
     padding: 15px 20px;
+    z-index: 100;
 }
 
-.logo {
+#header h1 {
     font-size: 1.2rem;
+    color: #ffffff;
+    margin: 0px 0px 10px 0px;
     letter-spacing: 2px;
-    color: #fff;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links a {
+/* BARRA DE NAVEGACIÓN Y ENLACES DEL MENÚ */
+#nav a {
+    color: #aaaaaa;
     text-decoration: none;
-    color: #aaa;
     font-size: 0.9rem;
-    transition: color 0.3s ease;
+    margin-right: 25px;
 }
 
-.nav-links a:hover {
-    color: #fff;
+#nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
-/* DISEÑO DE SECCIONES GENERALES */
-.section {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 20px 40px 20px; /* Padding superior para que el menú fijo no tape el contenido */
-    border-bottom: 1px solid #222;
+/* CONTENEDOR PRINCIPAL DE SECCIONES (Margen superior para que el header fijo no lo tape) */
+#content {
+    margin-top: 110px;
+    margin-bottom: 50px;
 }
 
-.content {
-    max-width: 800px;
-    width: 100%;
+/* ESTILOS PARA CADA BLOQUE O ERA */
+.seccion-bloque {
+    width: 800px;
+    margin: 0px auto 40px auto;
+    padding: 40px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
 }
 
 h2 {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 15px;
 }
 
 p {
     font-size: 1.1rem;
+    line-height: 1.6;
+    color: #cccccc;
     margin-bottom: 15px;
-    color: #ccc;
 }
 
-/* HIPERVÍNCULOS INTERNOS EN EL TEXTO */
+/* ENLACES GENERALES DENTRO DEL TEXTO */
 a {
-    color: #d4af37; /* Tono dorado sutil para destacar los enlaces */
+    color: #d4af37;
     text-decoration: underline;
 }
 
 a:hover {
-    color: #fff;
+    color: #ffffff;
 }
 
-/* ESTILOS ESPECÍFICOS POR CADA ERA (Toques visuales limpios) */
-.bio-section {
-    background-color: #181818;
-}
-
-.era-1 {
-    background-color: #1a1614; /* Tono cálido retro */
-}
-
-.era-2 {
-    background-color: #111111; /* Tono oscuro industrial */
-}
-
-.era-3 {
-    background-color: #1f1f1f; /* Tono gris minimalista */
-}
-
-.back-link {
-    display: inline-block;
+/* CONTENEDOR DE IMÁGENES LOCALES */
+.contenedor-imagenes {
+    text-align: center;
     margin-top: 20px;
-    font-size: 0.9rem;
-    text-decoration: none;
-    color: #888;
+    margin-bottom: 20px;
 }
 
-.back-link:hover {
-    color: #fff;
+.contenedor-imagenes img {
+    width: 45%;
+    max-width: 220px;
+    height: auto;
+    border: 1px solid #444;
+    margin: 5px;
+}
+
+/* ENLACE DE RETORNO AL INICIO */
+.enlace-volver {
+    font-size: 0.9rem;
+    color: #888888;
+    text-decoration: none;
+}
+
+.enlace-volver:hover {
+    color: #ffffff;
 }
 
 /* PIE DE PÁGINA */
-footer {
+#footer {
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     background-color: #080808;
-    color: #666;
-    font-size: 0.85rem;
-}
-
-/* CONTENEDOR PARA DOS IMÁGENES POR ERA */
-.image-grid {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-grid img {
-    width: 48%;
-    max-width: 160px;
-    height: auto;
-    border-radius: 6px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-    border: 1px solid #333;
-    object-fit: cover;
+    border-top: 1px solid #333;
+    color: #666666;
+    font-size: small;
 }
