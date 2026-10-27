@@ -1,0 +1,190 @@
+/* CONFIGURACIÓN GENERAL Y RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, helvetica, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* CABECERA FIJA SUPERIOR */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0a0a0a;
+    border-bottom: 1px solid #333;
+    padding: 15px 20px;
+    z-index: 1000;
+}
+
+#header h1 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    letter-spacing: 2px;
+}
+
+#nav a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-right: 20px;
+}
+
+#nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* CONTENEDOR GENERAL */
+#content {
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+
+/* BLOQUES DE CONTENIDO (TARJETAS) */
+.seccion-bloque {
+    width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 40px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #cccccc;
+}
+
+/* ENLACES */
+a {
+    color: #d4af37;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.enlace-volver {
+    font-size: 0.9rem;
+    color: #888888;
+    text-decoration: none;
+}
+
+.enlace-volver:hover {
+    color: #ffffff;
+}
+
+/* CONTROL ESTRICTO DE IMÁGENES (Evita que se expongan gigantes) */
+.contenedor-imagenes {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedor-imagenes img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 1px solid #444;
+    margin: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+/* TABLA INFORMATIVA */
+.tabla-datos {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #121212;
+    border-collapse: collapse;
+    border: 1px solid #444;
+}
+
+.tabla-datos th {
+    background-color: #222;
+    color: #d4af37;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #444;
+}
+
+.tabla-datos td {
+    padding: 10px;
+    color: #ccc;
+    border: 1px solid #444;
+    font-size: 0.95rem;
+}
+
+/* FORMULARIO */
+form p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+form input[type="text"],
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #121212;
+    border: 1px solid #444;
+    color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 8px 15px;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: #d4af37;
+    color: #000;
+}
+
+/* PIE DE PÁGINA */
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #080808;
+    border-top: 1px solid #333;
+    color: #666666;
+    font-size: small;
+}
