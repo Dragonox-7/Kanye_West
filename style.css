@@ -1,0 +1,153 @@
+/* CONFIGURACIÓN GENERAL Y RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Esto hace que el desplazamiento con hipervínculos sea suave */
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* NAVEGACIÓN FIJA */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0a0a0a;
+    border-bottom: 1px solid #333;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+/* DISEÑO DE SECCIONES GENERALES */
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px 40px 20px; /* Padding superior para que el menú fijo no tape el contenido */
+    border-bottom: 1px solid #222;
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+/* HIPERVÍNCULOS INTERNOS EN EL TEXTO */
+a {
+    color: #d4af37; /* Tono dorado sutil para destacar los enlaces */
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* ESTILOS ESPECÍFICOS POR CADA ERA (Toques visuales limpios) */
+.bio-section {
+    background-color: #181818;
+}
+
+.era-1 {
+    background-color: #1a1614; /* Tono cálido retro */
+}
+
+.era-2 {
+    background-color: #111111; /* Tono oscuro industrial */
+}
+
+.era-3 {
+    background-color: #1f1f1f; /* Tono gris minimalista */
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #888;
+}
+
+.back-link:hover {
+    color: #fff;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #080808;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+/* CONTENEDOR PARA DOS IMÁGENES POR ERA */
+.image-grid {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-grid img {
+    width: 48%;
+    max-width: 160px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    border: 1px solid #333;
+    object-fit: cover;
+}
